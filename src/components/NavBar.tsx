@@ -7,7 +7,6 @@ import {
   SignOut,
   UserImg,
   DropDown,
-  DropButtons,
 } from "./StyledComponents/StyledNav";
 import logo from "../assets/images/logo.svg";
 import home_icon from "../assets/images/home-icon.svg";
@@ -63,7 +62,7 @@ function NavBar() {
         navigate("/");
       }
     });
-  }, [username]);
+  });
   const handleAuth = () => {
     if (!username) {
       signInWithPopup(auth, provider)
@@ -118,7 +117,7 @@ function NavBar() {
           <SignOut>
             <UserImg src={userphoto} alt={username} />
             <DropDown>
-              <Link to="/home">
+              {/*               <Link to="/home">
                 <DropButtons src={home_icon} alt="home" />
               </Link>
               <Link to="/search">
@@ -135,7 +134,7 @@ function NavBar() {
               </Link>
               <Link to="tvshows">
                 <DropButtons src={tvshow_icon} alt="tv-show" />
-              </Link>
+              </Link> */}
               <div className="signout">
                 <span onClick={handleAuth}>Sign Out</span>
               </div>

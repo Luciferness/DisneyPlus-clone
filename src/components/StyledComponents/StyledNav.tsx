@@ -101,12 +101,13 @@ export const Login = styled.a`
 export const UserImg = styled.img`
   height: 100%;
 `;
-export const DropButtons = styled.img`
+/*export const DropButtons = styled.img`
   display: none;
   @media (max-width: 768px) {
     display: flex;
+    z-index: -1;
   }
-`;
+`;*/
 
 export const DropDown = styled.div`
   display: flex;
