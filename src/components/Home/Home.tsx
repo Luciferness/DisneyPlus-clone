@@ -73,10 +73,10 @@ function Home() {
       );
     };
     fetchMovies();
-  }, [username]);
+  }, [dispatch, username]);
   return (
     <>
-      <main>
+      <main className="Home">
         {match ? (
           <HomeContainer>
             <ImgSlider />

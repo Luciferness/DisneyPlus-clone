@@ -10,31 +10,31 @@ function HomeViewers() {
   return (
     <ViewerContainer>
       <ViewerWrapper>
-        <a>
+        <a href="/">
           <img src={viewerdisney} alt="disney" />
           <VideoPlayer videoName="disney.mp4" />
         </a>
       </ViewerWrapper>
       <ViewerWrapper>
-        <a>
+        <a href="/">
           <img src={viewpixar} alt="pixar" />
           <VideoPlayer videoName="pixar.mp4" />
         </a>
       </ViewerWrapper>
       <ViewerWrapper>
-        <a>
+        <a href="/">
           <img src={viewermarvel} alt="marvel" />
           <VideoPlayer videoName="marvel.mp4" />
         </a>
       </ViewerWrapper>
       <ViewerWrapper>
-        <a>
+        <a href="/">
           <img src={viewernat} alt="national geographic" />
           <VideoPlayer videoName="national.mp4" />
         </a>
       </ViewerWrapper>
       <ViewerWrapper>
-        <a>
+        <a href="/">
           <img src={viewerstar} alt="star wars" />
           <VideoPlayer videoName="star-wars.mp4" />
         </a>

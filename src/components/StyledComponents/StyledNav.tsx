@@ -101,16 +101,16 @@ export const Login = styled.a`
 export const UserImg = styled.img`
   height: 100%;
 `;
-/*export const DropButtons = styled.img`
+export const DropButtons = styled.img`
   display: none;
   @media (max-width: 768px) {
     display: flex;
     z-index: -1;
   }
-`;*/
+`;
 
 export const DropDown = styled.div`
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   top: 48px;
@@ -135,8 +135,12 @@ export const DropDown = styled.div`
   }
 `;
 
-export const SignOut = styled.div`
+export const SignOut = styled.button`
   position: relative;
+  border: 0px;
+  border-radius: 50%;
+  margin: 0px 0px;
+  padding: 0px 0px;
   height: 48px;
   display: flex;
   height: 48px;
@@ -149,6 +153,7 @@ export const SignOut = styled.div`
   }
   &:hover {
     ${DropDown} {
+      display: flex;
       opacity: 1;
       transition-duration: 1s;
       &:hover {

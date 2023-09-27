@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import Login from "./components/Login";
 import React from "react";
+import Login from "./components/Login";
 import Home from "./components/Home/Home";
-import MainLayout from "./MainLayout";
 import Details from "./components/Details";
+import MainLayout from "./MainLayout";
 
 function App() {
   return (

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import {
+  DropButtons,
   Login,
   Logo,
   Nav,
@@ -62,7 +63,7 @@ function NavBar() {
         navigate("/");
       }
     });
-  });
+  }, [username]);
   const handleAuth = () => {
     if (!username) {
       signInWithPopup(auth, provider)
@@ -114,10 +115,10 @@ function NavBar() {
               <span>TV-SHOWS</span>
             </Link>
           </NavMenu>
-          <SignOut>
+          <SignOut className="sign">
             <UserImg src={userphoto} alt={username} />
             <DropDown>
-              {/*               <Link to="/home">
+              <Link to="/home">
                 <DropButtons src={home_icon} alt="home" />
               </Link>
               <Link to="/search">
@@ -134,7 +135,7 @@ function NavBar() {
               </Link>
               <Link to="tvshows">
                 <DropButtons src={tvshow_icon} alt="tv-show" />
-              </Link> */}
+              </Link>
               <div className="signout">
                 <span onClick={handleAuth}>Sign Out</span>
               </div>

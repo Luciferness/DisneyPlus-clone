@@ -43,13 +43,9 @@ function Details() {
       const docRef = doc(db, "movies", id);
       const docSnapshot = await getDoc(docRef);
       if (docSnapshot.exists()) {
-        // The movie with the provided ID exists
         const movieData = docSnapshot?.data();
-        // console.log("effdata", movieData);
+        console.log("effdata", movieData);
         setMovieDetails(movieData as mov);
-
-        // Update the state with the fetched movie data
-        // ...
       } else {
         return;
       }
@@ -57,7 +53,6 @@ function Details() {
 
     fetchMovie();
   }, [id]);
-
   return (
     <>
       {MovieDetails ? (
@@ -66,7 +61,7 @@ function Details() {
             <img src={MovieDetails?.backgroundImg} alt="bg" />
           </DetailsBackground>
           <ImageTitle>
-            <img src={MovieDetails?.titleImg} alt="tt" />
+            <img src={MovieDetails?.titleImg} alt="titleimg" />
           </ImageTitle>
           <ContentMeta>
             <Controls>

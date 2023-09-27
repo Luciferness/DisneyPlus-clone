@@ -12,7 +12,7 @@ import {
 import ctone from "../assets/images/cta-logo-one.svg";
 import cttwo from "../assets/images/cta-logo-two.png";
 
-const Login = (props: any) => {
+const Login = () => {
   return (
     <Container>
       <Content>

@@ -20,22 +20,22 @@ function ImgSlider() {
     <div>
       <Carousel {...settings}>
         <CarouselWrapper>
-          <a>
+          <a href="/">
             <img src={slider1} alt="sld1" />
           </a>
         </CarouselWrapper>
         <CarouselWrapper>
-          <a>
+          <a href="/">
             <img src={slider2} alt="sld2" />
           </a>
         </CarouselWrapper>
         <CarouselWrapper>
-          <a>
+          <a href="/">
             <img src={slider3} alt="sld3" />
           </a>
         </CarouselWrapper>
         <CarouselWrapper>
-          <a>
+          <a href="/">
             <img src={slider4} alt="sld4" />
           </a>
         </CarouselWrapper>
