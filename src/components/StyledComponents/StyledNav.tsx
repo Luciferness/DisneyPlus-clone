@@ -129,6 +129,11 @@ export const DropDown = styled.div`
     top: 20px;
     bottom: 10px;
     margin-bottom: 20px;
+    color: rgb(249, 249, 249);
+    &:hover {
+      background-color: rgb(249, 249, 249);
+      color: #090b13;
+    }
   }
   @media (max-width: 768px) {
     display: flex;
@@ -156,6 +161,8 @@ export const SignOut = styled.button`
       display: flex;
       opacity: 1;
       transition-duration: 1s;
+      color: rgb(249, 249, 249);
+      background-color: #090b13;
       &:hover {
         color: rgb(249, 249, 249);
         background-color: #090b13;

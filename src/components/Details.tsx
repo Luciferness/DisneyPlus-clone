@@ -44,7 +44,6 @@ function Details() {
       const docSnapshot = await getDoc(docRef);
       if (docSnapshot.exists()) {
         const movieData = docSnapshot?.data();
-        console.log("effdata", movieData);
         setMovieDetails(movieData as mov);
       } else {
         return;

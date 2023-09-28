@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   DropButtons,
   Login,
@@ -30,6 +30,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 
 function NavBar() {
+  const [isOpen, setisOpen] = useState("none");
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const username = useSelector(selectUserName);
@@ -80,6 +81,12 @@ function NavBar() {
     }
   };
 
+  function handleClick() {
+    if (isOpen === "none") {
+      setisOpen("flex");
+    } else setisOpen("none");
+  }
+
   return (
     <Nav>
       <Logo>
@@ -115,9 +122,9 @@ function NavBar() {
               <span>TV-SHOWS</span>
             </Link>
           </NavMenu>
-          <SignOut className="sign">
+          <SignOut className="sign" onClick={() => handleClick()}>
             <UserImg src={userphoto} alt={username} />
-            <DropDown>
+            <DropDown style={{ display: isOpen }}>
               <Link to="/home">
                 <DropButtons src={home_icon} alt="home" />
               </Link>
