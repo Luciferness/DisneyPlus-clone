@@ -12,4 +12,4 @@ In the project directory, you can run:
 
 ### `Description`
 
-This is a react ts Disney+.
+This is a react ts Disney+ clone.
