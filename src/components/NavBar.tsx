@@ -89,7 +89,7 @@ function NavBar() {
 
   return (
     <Nav>
-      <Logo>
+      <Logo href="/home">
         <img src={logo} alt="logo" />
       </Logo>
       {!username ? (
